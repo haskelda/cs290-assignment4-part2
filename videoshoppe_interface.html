@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<form action="davidsvideoshoppe.php" method="POST">
+	<title>David's Video Shoppe</title>
+	<center>
+	<h1>David's Video Shoppe</h1>
+	
+	<p>To add an video to the inventory, enter the relevent info, and click on "Add Video" below</p>
+	Title: <input type="text" name="name" id="name"><br>
+	Category: <input type ="text" name="category" id="category"><br>
+	Length: <input type ="text" name="length" id="length"><br>
+	<br>
+	<button type="submit" name="addVideo" id="addVideo">Add Video</button><br>
+	
+</form>
+<br>
+	<table border='1'>
+	<caption> Video Inventory </caption>
+	<tr>
+	<th>Name
+	<th>Category
+	<th>Length
+	<th>Status
+	<th>Check In/Out
+	<th>Delete
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+			  <form action='davidsvideoshoppe.php' method='POST'>
+			  <input type='submit' name='status' value='X'>
+			  </form>
+			</td>
+			<td>
+			  <form action='davidsvideoshoppe.php' method='POST'>
+			  <input type='submit' name='deleteVideo' value='X'>
+			  </form>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<select name="selectCategory" id="selectCategory">
+		<option value="All Movies">All Movies</option>
+		<option value="Comedy">Comedy</option>
+	</select>
+	<button type="submit" name="submitSelect" id="submitSelect">Filter Results</button><br>
+	<br><br>
+	To clear inventory: 
+	<button type="submit" name="deleteAll" id="addVideo">Delete All Videos</button><br>
+	</center>
+</body>
+</html>
