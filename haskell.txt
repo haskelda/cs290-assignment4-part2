@@ -13,4 +13,11 @@ Start: Thu, 26 Feb 2015 13:00
 End: Thu, 26 Feb 2015 16:28:00 -0800 
 Tasks: Initial Commit (Create DB table.  Wrote HTML)
 
-Work Session 2 (working on form submits)
+
+Start: Thu, 26 Feb 2015 20:30
+End: Fri, 27 Feb 2015 00:18:19 -0800 
+Tasks: Work Session 2 (working on form submits)
+
+After researching a bit more about submitting POSTs, I decided to split project into multiple php files and use header redirects.  Cleaner code, too.
+
+Work Session 3  

@@ -15,3 +15,5 @@ INSERT INTO videoshoppe (name, category, length) VALUES
 
 INSERT INTO videoshoppe (name, category, length) VALUES 
 ("Die Hard", "Action", 120);
+
+UPDATE videoshoppe 
