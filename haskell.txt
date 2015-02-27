@@ -2,3 +2,15 @@ David Haskell
 haskelda
 932430887
 cs290 Assignment 4 part 2 PHP & MySQL
+
+
+Start: Wed, 25 Feb 2015 11:30
+End: Wed, 25 Feb 2015 14:00 
+Tasks: Preview assignment.  Review all videos. Connect to DB with PHP
+
+
+Start: Thu, 26 Feb 2015 13:00
+End: Thu, 26 Feb 2015 16:28:00 -0800 
+Tasks: Initial Commit (Create DB table.  Wrote HTML)
+
+Work Session 2 (working on form submits)

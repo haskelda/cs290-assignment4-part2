@@ -7,3 +7,11 @@ CREATE TABLE `videoshoppe` (
 PRIMARY KEY(`id`),
 UNIQUE KEY (`name`)
 ) ENGINE=InnoDB;
+
+INSERT INTO videoshoppe (name, category, length) VALUES 
+("Matrix", "Action", 121),
+("Romancing The Stone", "Romance", 123),
+("Andromeda Strain", "Sci-fi", 201);
+
+INSERT INTO videoshoppe (name, category, length) VALUES 
+("Die Hard", "Action", 120);
