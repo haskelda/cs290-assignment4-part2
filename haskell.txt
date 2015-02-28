@@ -24,4 +24,8 @@ Start: Fri, 27 Feb 2015 10:00
 End: Fri, 27 Feb 2015 15:30:20 -0800 
 Tasks: Work Session 3 (Completed main interface with table displaying. Created additional files for each action. Completed addVideo.php and videoStatus.php
 
-Assignment Completed
+Start: Fri, 27 Feb 2015 15:30
+End: Fri, 27 Feb 2015 16:57:21 -0800 
+Tasks: Assignment Completed
+
+Total time on Assignment:  Approx 16.75 hours (includes reading and lectures)
