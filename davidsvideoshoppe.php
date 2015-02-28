@@ -8,12 +8,13 @@ if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     exit;
 } else {
-	echo "Successfully connected to haskelda-db<br>";
+	//echo "Successfully connected to haskelda-db<br>";
 }
-
+/*
 if ($_POST != NULL) {
 	var_dump ($_POST);
 }
+*/
 ?>
 
 <!DOCTYPE html>
@@ -128,7 +129,7 @@ if ($_POST == NULL || (isset($_POST['selectCategory']) && $_POST['selectCategory
 	<form action="davidsvideoshoppe.php" method="POST">
 	Select Category: 
 	<select name="selectCategory"> 
-		<option value="All Movies">All Movies</option> <!-- Default -->
+	<option value="All Movies">All Movies</option>	
 <?php 
 		if (!($stmt = $mysqli->prepare("SELECT DISTINCT category FROM videoshoppe WHERE category != ''"))) {
     		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
@@ -146,9 +147,15 @@ if ($_POST == NULL || (isset($_POST['selectCategory']) && $_POST['selectCategory
     		echo "Binding output parameters failed: (" . $stmt->errno . ") " . $stmt->error;
     		exit;
 		}
+
+		//if ($out_category != NULL) {
+		//	echo '			<option value="All Movies">All Movies</option>'; // Default
+		//}
 		while ($stmt->fetch()) {
 			echo '			<option value="' . "$out_category" . '">' . "$out_category" . '</option>';
 		}
+
+		//var_dump ($out_category);
 ?>
 	</select>
 	<input type="submit" value = "Filter Results"/><br>

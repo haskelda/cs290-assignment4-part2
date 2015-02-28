@@ -20,4 +20,8 @@ Tasks: Work Session 2 (working on form submits)
 
 After researching a bit more about submitting POSTs, I decided to split project into multiple php files and use header redirects.  Cleaner code, too.
 
-Work Session 3  
+Start: Fri, 27 Feb 2015 10:00
+End: Fri, 27 Feb 2015 15:30:20 -0800 
+Tasks: Work Session 3 (Completed main interface with table displaying. Created additional files for each action. Completed addVideo.php and videoStatus.php
+
+Assignment Completed

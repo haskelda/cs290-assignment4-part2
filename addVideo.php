@@ -20,8 +20,11 @@ if ($_POST != NULL) {
 */
 $title = $_POST['title'];
 $category = $_POST['category'];
-$length = $_POST['length'] + 0; // cast to integer
-
+if ($_POST['length'] == "") { // if nothing entered
+	$length = NULL;
+} else {
+	$length = $_POST['length'] + 0; // cast to integer
+}
 
 // Data validation - title is required field
 if ($_POST['title'] == "") {
@@ -31,12 +34,13 @@ if ($_POST['title'] == "") {
 }
 
 
-// Data validatiom - length must be poitive integer
-
-if (!is_int($length) || $length < 1) {  // 
-	echo 'Length needs to be a positive integer.<br>';
-	echo '<a href="davidsvideoshoppe.php"> Return </a>';
-	exit;
+// Data validatiom - length must be positive integer
+if ($length != NULL) {
+	if (!is_int($length) || $length < 1) {  // 
+		echo 'Length needs to be a positive integer.<br>';
+		echo '<a href="davidsvideoshoppe.php"> Return </a>';
+		exit;
+	}
 }
 
 
@@ -63,20 +67,6 @@ if (!is_int($length) || $length < 1) {  //
 		    exit;
 		}
 		//echo'video added';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
